@@ -1,3 +1,4 @@
+# require_relative '..first_priority/that_was_unexpected'
 class Person
   attr_accessor :name, :candy_lover
 
@@ -20,10 +21,11 @@ class Person
 
   def ballin_candy_lover?
     if @candy_lover == true
-      "Aw sweet, this cat loves them some candy!"
+     "Aw sweet, this cat loves them some candy!"
     else
       10.times do
-        "not a ballin candy lover"
+      "not a ballin candy lover"
+      end #this end was missing
     end
   end
 end
